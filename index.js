@@ -16,7 +16,7 @@ function calculate() {
   const display = document.getElementById('display');
   let expression = display.value;
 
-  
+  // Replace 'x' with '*' for multiplication
   expression = expression.replace(/x/g, '*');
 
   // Use try-catch to avoid crashes due to invalid expressions
