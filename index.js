@@ -1,21 +1,4 @@
-/*const display = document.getElementById("display");
 
-function appendToDisplay (input) {
-  display.value+= input;
-} 
-
-function calculate(params) {
- try{display.value = eval(display.value)}
-  catch{ display.value = 'Error'}
-} 
-
-function clearDisplay(params) {
-  display.value = "";
-}
-
-function deleteOneCharacter(input) {display= display.slice(0, -1);
-  updateDisplay();
-} */
 
 // Function to clear the display
 function clearDisplay() {
@@ -33,7 +16,7 @@ function calculate() {
   const display = document.getElementById('display');
   let expression = display.value;
 
-  // Replace 'x' with '*' for multiplication as JS understands '*'
+  
   expression = expression.replace(/x/g, '*');
 
   // Use try-catch to avoid crashes due to invalid expressions
